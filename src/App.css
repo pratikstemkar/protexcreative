@@ -1,38 +1,75 @@
-.App {
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.font-oswald {
+  font-family: 'Oswald';
+}
+
+.font-roboto {
+  font-family: 'Roboto';
+}
+
+/* CSS Variables */
+:root {
+  --primary-color: #ce2626;
+  --primary-color-hover: #d3071b;
+  --secondary-color: #103063;
+  --secondary-color-hover: #143fa5;
+  --light-color: #f4f4f4;
+  --dark-color: #000000;
+  --background-color: #f18c8c;
+}
+
+/* TAGS */
+a {
+  text-decoration: none;
+}
+
+/* Footer */
+ .blog-footer {
+  padding: 2.5rem 0;
+  color: #999;
   text-align: center;
+  background-color: #f9f9f9;
+  border-top: .05rem solid #e5e5e5;
+}
+.blog-footer p:last-child {
+  margin-bottom: 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ABOUT */
+.about-dp {
+  height: 200px;
+  width: 200px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.btn-twitter {
+  background-color: #00acee;
+  color: var(--light-color);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.btn-twitter:hover {
+  background-color: #0576a3;
+  color: var(--light-color);
 }
 
-.App-link {
-  color: #61dafb;
+.btn-instagram {
+  background-color: #E1306C;
+  color: var(--light-color);
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.btn-instagram:hover {
+  background-color: rgb(155, 17, 63);
+  color: var(--light-color);
+}
+
+.btn-github {
+  background-color: rgb(71, 71, 71);
+  color: var(--light-color);
+}
+
+.btn-github:hover {
+  background-color: rgb(36, 35, 35);
+  color: var(--light-color);
 }
