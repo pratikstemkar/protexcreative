@@ -1,9 +1,8 @@
 import React, {Fragment} from 'react';
-
-import Jumbotron from '../layout/Jumbotron';
-import TopCards from '../layout/TopCards';
-import BlogListHome from '../layout/BlogListHome';
-import ContactCard from '../layout/ContactCard';
+import Jumbotron from '../layout/landing/Jumbotron';
+import TopCards from '../layout/landing/TopCards';
+import BlogListHome from '../layout/landing/BlogListHome';
+import ContactCard from '../layout/landing/ContactCard';
 
 import Blockquote from '../layout/landing/Blockquote'
 
@@ -20,8 +19,6 @@ const Landing = () => {
                         <BlogListHome />
                     </div>
                     <div className="col-3">
-                        <ContactCard />
-                        <ContactCard />
                         <ContactCard />
                     </div>
                 </div>

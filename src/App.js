@@ -12,6 +12,10 @@ import Blog from './components/pages/Blog';
 import Video from './components/pages/Video';
 import Download from './components/pages/Download';
 
+import FirstBlog from './components/posts/2020-07-20-First-Blog';
+import WhyUPSC from './components/posts/2020-07-23-Why-UPSC';
+import PadmanabhaswamyTemple from './components/posts/2020-07-26-Padmanabhaswamy-Temple';
+
 function App() {
   return (
     <Fragment>
@@ -19,13 +23,17 @@ function App() {
 		<header>
 			<Navbar />
 		</header>
+			{/* PAGE URL */}
 			<Route exact path="/" component={Landing} />
 			<Route path="/about" component={About} />
-			<Route path="/blog" component={Blog} />
+			<Route exact path="/blog" component={Blog} />
 			<Route path="/video" component={Video} />
 			<Route path="/download" component={Download} />
 		
-
+			{/* POSTS URL */}
+			<Route path="/blog/the-start" component={FirstBlog} />
+			<Route path="/blog/why-i-am-preparing-for-upsc-cse" component={WhyUPSC} />
+			<Route path="/blog/padmanabhaswamy-temple" component={PadmanabhaswamyTemple} />
 		
 		<Footer />
 	  </Router>
